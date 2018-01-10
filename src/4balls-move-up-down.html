@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .spinner {
+            width: 200px;
+            height: 500px;
+            position: relative;
+        }
+
+        .ball1,
+        .ball2,
+        .ball3,
+        .ball4 {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: red;
+            position: absolute;
+            bottom: 0;
+
+            -webkit-animation: MoveUpDown 1s linear infinite;
+            animation: MoveUpDown 1s linear infinite;
+        }
+
+        .ball1 {
+            left: 50px;
+        }
+
+        .ball2 {
+            left: 100px;
+            -webkit-animation-delay: -0.25s;
+            animation-delay: -0.25s;
+        }
+
+        .ball3 {
+            left: 150px;
+            -webkit-animation-delay: -0.5s;
+            animation-delay: -0.5s;
+        }
+
+        .ball4 {
+            left: 200px;
+            -webkit-animation-delay: -0.75s;
+            animation-delay: -0.75s;
+        }
+
+        @keyframes MoveUpDown {
+            0% {
+                bottom: 0;
+                width: 30px;
+            }
+            50% {
+                bottom: 50px;
+                width: 15px;
+            }
+            100% {
+                bottom: 0;
+                width: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="spinner">
+        <div class="ball1"></div>
+        <div class="ball2"></div>
+        <div class="ball3"></div>
+        <div class="ball4"></div>
+    </div>
+
+</body>
+
+</html>
