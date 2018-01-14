@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .spinner {
+            position: relative;
+        }
+
+        .trapezoid {
+            border-bottom: 100px solid red;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            height: 0;
+            width: 100px;
+            opacity: 0.3;
+        }
+
+        .trap1 {
+            border-bottom-color: darkorange;
+            position: absolute;
+            top: 40px;
+            left: 50px;
+            transform: rotate(153deg);
+            animation: fade 3s infinite ease-in;  
+        }
+
+        .trap2 {
+            border-bottom-color: blueviolet;
+            position: absolute;
+            top: 40px;
+            left: 184px;
+            transform: rotate(-153deg);
+            animation: fade 3s infinite ease-in;  
+            animation-delay: 0.5s;                                
+        }
+
+        .trap3 {
+            border-bottom-color: blue;
+            position: absolute;
+            top: 162px;
+            left: -33px;
+            transform: rotate(90deg);
+            border-bottom-width: 90px;
+            border-left-width: 67px;
+            border-right-width: 67px;
+            animation: fade 3s infinite ease-in; 
+            animation-delay: 2.5s;                                 
+        }
+
+        .trap4 {
+            border-bottom-color: brown;
+            position: absolute;
+            top: 163px;
+            left: 235px;
+            transform: rotate(-90deg);
+            border-bottom-width: 90px;
+            border-left-width: 67px;
+            border-right-width: 67px;
+            animation: fade 3s infinite ease-in;  
+            animation-delay: 1s;          
+                      
+        }
+
+        .trap5 {
+            border-bottom-color: crimson;
+            position: absolute;
+            top: 275px;
+            left: 51px;
+            transform: rotate(27deg);
+            animation: fade 3s infinite ease-in;  
+            animation-delay: 2s;            
+        }
+
+        .trap6 {
+            border-bottom-color: darkgreen;
+            position: absolute;
+            top: 275px;
+            left: 185px;
+            transform: rotate(-27deg);
+            animation: fade 3s infinite ease-in;        
+            animation-delay: 1.5s;               
+        }
+
+        @keyframes fade {
+            0% {
+                opacity: 0.3;
+            }
+            16.66% {
+                opacity: 1;
+            }
+            30%, 100% {
+                opacity: 0.3;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="spinner">
+        <div class="trapezoid trap1">
+        </div>
+        <div class="trapezoid trap2">
+        </div>
+        <div class="trapezoid trap3">
+        </div>
+        <div class="trapezoid trap4">
+        </div>
+        <div class="trapezoid trap5">
+        </div>
+        <div class="trapezoid trap6">
+        </div>
+    </div>
+
+</body>
+
+</html>
